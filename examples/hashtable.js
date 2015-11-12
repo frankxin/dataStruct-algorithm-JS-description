@@ -16,8 +16,7 @@
 function hash(string) {
   var H = 37,
       total = 0,
-      string = string.toString()
-  debugger
+      string = string.toString();
   for (var i = 0; i < string.length; ++i) {
     total += H * total + string.charCodeAt(i)
   }
